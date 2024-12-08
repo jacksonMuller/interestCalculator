@@ -14,6 +14,6 @@ This website is a straightforward and user-friendly web application designed to 
 <h4>Link to GitHub</h4>
 <ul>
 <li>
-<a href="">Here</a>
+<a href="https://github.com/jacksonMuller/interestCalculator">Here</a>
 </li>
 </ul>

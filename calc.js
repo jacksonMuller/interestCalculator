@@ -2,6 +2,7 @@ const principal = document.querySelector("#principal");
 const interestRate = document.querySelector("#interestRate");
 const compoundNum = document.querySelector("#timesCompounded");
 const totalYears = document.querySelector("#years");
+const aprText = document.querySelector("#aprText");
 
 //Output values:
 const compoundTotal = document.querySelector("#compoundTotal");
@@ -13,7 +14,6 @@ compoundNum.addEventListener("input", calculateCompoundInterest);
 totalYears.addEventListener("input", calculateCompoundInterest);
 
 //Add function to calculate compound interest:
-
 function calculateCompoundInterest() {
   const P = parseFloat(principal.value);
   const r = parseFloat(interestRate.value) / 100;
@@ -22,7 +22,9 @@ function calculateCompoundInterest() {
 
   if (P && r && n && t) {
     const A = P * Math.pow(1 + r / n, n * t);
-    compoundTotal.textContent = `Future Value: $${A.toFixed(2)}`;
+    const interestGained = A - P;
+    // Show both the future value and the exact interest gained
+    compoundTotal.textContent = `Future Value: $${A.toFixed(2)} (Interest Gained: $${interestGained.toFixed(2)})`;
   } else {
     compoundTotal.textContent = "Future Value: -";
   }

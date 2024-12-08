@@ -19,10 +19,10 @@ header {
 main {
   width: auto;
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: start;
   padding-top: 20px;
 }
 
