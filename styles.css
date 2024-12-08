@@ -1,0 +1,112 @@
+body {
+  background-image: linear-gradient(MediumSeaGreen, SlateBlue);
+  font-family: "Nerko One", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  animation: titlespin 2s linear;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 4px 2px 2px black;
+  text-decoration: underline white;
+  width: 500px;
+  transition: transform 0.5s ease;
+}
+
+h1:hover {
+  transform: rotate(180deg);
+}
+
+input {
+  border-color: black;
+  color: black;
+  border-width: 2px;
+  border-radius: 25px;
+  width: 100px;
+  transition: width 0.5s ease-in-out, border-color 0.2s ease-in-out;
+  margin: 2px;
+}
+
+input:focus {
+  width: 150px;
+  border-color: blue;
+}
+
+#inputField {
+  border-bottom: 4px dotted black;
+  border-top: 5px solid black;
+  margin-bottom: 5px;
+  padding: 10px 0;
+}
+
+output,
+#outputText {
+  font-size: 25px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+img {
+  display: block;
+  height: 40vh;
+  margin: 20px auto 0;
+}
+
+#imageSource {
+  text-align: center;
+  font-size: 1%;
+  color: black;
+  margin-top: 0;
+  padding-bottom: 20vh;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  margin-top: auto;
+}
+
+#footerText {
+  color: black;
+  margin: 0;
+}
+
+@keyframes titlespin {
+  0% {
+    rotate: 0deg;
+    opacity: 0;
+  }
+  50% {
+    rotate: 180deg;
+    opacity: 50%;
+  }
+  100% {
+    rotate: 360deg;
+    opacity: 100%;
+  }
+}

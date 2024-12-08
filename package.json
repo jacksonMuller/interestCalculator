@@ -1,0 +1,14 @@
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "description": "Homework 1 for CMSI 2021 class",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}
